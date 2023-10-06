@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import stag from "../images/image 13.png";
 import "../styles/Register.css";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [name, setName] = useState("");
@@ -14,6 +15,8 @@ function Register() {
   const [mobileError, setMobileError] = useState("");
   const [checkError, setCheckError] = useState("");
   const [user, setUser] = useState({});
+
+  const navigate = useNavigate("");
 
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
@@ -75,6 +78,7 @@ function Register() {
       localStorage.setItem("user", JSON.stringify(newUser));
       setUser(newUser);
       console.log(newUser);
+      navigate("/");
     }
   };
 
