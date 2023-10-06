@@ -92,9 +92,9 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <div>{<Notes />}</div>
+      {/* <div>{<Notes />}</div> */}
       <div className="hright">{<News />}</div>
-      <button className="browse-btn">Browse</button> */}
+      {/* <button className="browse-btn">Browse</button> */}
     </div>
   );
 }
