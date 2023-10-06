@@ -64,7 +64,7 @@ function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="weather">
+        <div className="weather">
           <div className="date_time">
             <h2>{weather.current.last_updated}</h2>
           </div>
@@ -90,7 +90,7 @@ function Home() {
               <h6>Humidity</h6>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
       {/* <div>{<Notes />}</div>
       <div className="hright">{<News />}</div>
