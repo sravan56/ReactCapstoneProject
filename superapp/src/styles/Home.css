@@ -88,6 +88,8 @@
     width:450px;
     height:40px;
     border-radius:20px 20px 0 0;
+    display:flex;
+    flex-direction: row;
 }
 .weather .degree{
     width:450px;
@@ -103,6 +105,7 @@
     font-weight:600;
     letter-spacing: 2px;
     line-height: 35px;
+    margin-left:60px;
 }
 .cond{
     position: relative;
@@ -177,11 +180,11 @@
 .news-container{
     float:right;
     position:absolute;
-    left:600px;
+    left:700px;
    
 }
 .news-details{
-    width:300px;
+    width:350px;
     height:550px;
     position: relative;
     left:400px;
@@ -201,8 +204,9 @@
     line-height: 20px;
     letter-spacing: 1px;
     color:white;
-    width:260px;
+    width:310px;
     margin-left:15px;
+    text-align: justify;
     
     
 
@@ -213,14 +217,17 @@
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
-    width:260px;
+    width:310px;
     margin-top: 5px;
+    text-align: justify;
+    margin-left:20px;
+
 
     
 }
 
 .news-details img{
-  width:300px;
+  width:350px;
   height:60%;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
@@ -230,7 +237,7 @@
     font-family: "Roboto",sans-serif;
     font-size:14px;
     font-weight:400;
-    width:260px;
+    width:310px;
     text-align:start;
     position: relative;
     bottom:70px;
@@ -240,29 +247,65 @@
 }
 
 .notes-container{
-    width:350px;
+    width:400px;
     height:420px;
     background:#F1C75B;
     position: absolute;
     top:8%;
-    left:35%;
+    left:37%;
     border-radius: 20px;
+    overflow: hidden;
+}
+.notes-area{
+    padding: 20px;
+    overflow-y: auto;
+}
+
+  
+
+.notes-area h2{
+    font-family: "Roboto",sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color:black;
+    text-align: start;
+    padding:10px 0 0 10px;
 }
 textarea{
     outline: none;
     resize: none;
     border: none;
-    background: transparent;
+    background:#F1C75B;
     box-sizing: border-box;
-    width:350px;
+    width:310px;
     height: 350px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
-    padding: 10px 0 0 10px;
+    padding:20px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color:black;
+    text-align:justify;
+    word-spacing: 1px;
+}
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #FFE6A6;
+    border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #FFE6A6;
 }
 .browse-btn{
  position: absolute;
- left:90%;
+ left:86%;
  top:90%;
  padding:5px 14px;
  width: 130px;

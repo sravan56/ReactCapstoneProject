@@ -46,6 +46,27 @@ function Home() {
   if (!weather) {
     return <div>Loading...</div>;
   }
+
+
+  const formatDate = (date) => {
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    return `${day < 10 ? "0" : ""}${day}-${
+      month < 10 ? "0" : ""
+    }${month}-${year}`;
+  };
+  const formatTime = (date) => {
+    let hours = date.getHours();
+    const minutes = date.getMinutes();
+    const ampm = hours > 12 ? "PM" : "AM";
+    hours = hours % 12 || 12;
+    return `${hours}:${minutes < 10 ? "0" : ""}${minutes} ${ampm}`;
+  };
+  const lastUpdated = new Date(weather.current.last_updated);
+
+  
+
   return (
     <div className="container">
       <div className="hleft">
@@ -66,7 +87,8 @@ function Home() {
         </div>
         <div className="weather">
           <div className="date_time">
-            <h2>{weather.current.last_updated}</h2>
+            <h2>{`${formatDate(lastUpdated)}`}</h2>
+            <h2>{`${formatTime(lastUpdated)}`}</h2>
           </div>
           <div className="degree">
             <div className="cond">
@@ -92,9 +114,9 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <div>{<Notes />}</div> */}
+      <div>{<Notes />}</div>
       <div className="hright">{<News />}</div>
-      {/* <button className="browse-btn">Browse</button> */}
+      <button className="browse-btn">Browse</button>
     </div>
   );
 }
