@@ -48,6 +48,8 @@ body{
 }
 .col2-1{
     margin-top: 50px;
+    position: relative;
+    left:350px;
 }
 .col2-1 h1{
     color:#72DB73;
@@ -110,11 +112,14 @@ body{
     line-height: 20px;
     position: relative;
     bottom:10%;
+    left:330px;
     
 
 }
 .col2-3{
-    margin-left: 40px;
+    
+    position: relative;
+    left:300px;
 }
 .col2-3 button{
     width:350px;
