@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&family=DM+Sans&family=Dangrek&family=Delius+Unicase:wght@400;700&family=Inter:wght@500;800&family=Julius+Sans+One&family=Nunito+Sans&family=Roboto+Condensed:wght@700&family=Roboto&family=Space+Grotesk:wght@500&family=Single+Day&family=Rubik+Mono+One&display=swap');
+
+.weather{
+    border-radius: 20px;
+    position:absolute;
+    top:38%;
+    left:5%;
+    background:#101744;
+}
+.weather .date_time{
+    background: #FF4ADE;
+    width:500px;
+    height:40px;
+    border-radius:20px 20px 0 0;
+    display:flex;
+    flex-direction: row;
+}
+.weather .degree{
+    width:500px;
+    height:120px;
+    display:flex;
+    flex-direction: row;
+    color:white;
+}
+.date_time h2{
+    color:white;
+    font-family: "Roboto",sans-serif;
+    font-size:24px;
+    font-weight:600;
+    letter-spacing: 2px;
+    line-height: 35px;
+    margin-left:60px;
+}
+.cond{
+    position: relative;
+    left:20px;
+    text-align: justify;
+    font-family: "Roboto",sans-serif;
+    font-size:14px;
+    font-weight:400;
+    letter-spacing: 1px;
+    line-height: px;
+
+}
+.line{
+    border-left:1px solid white;
+    height:70px;
+    margin-top: 30px;
+    position: relative;
+    left:50px;
+}
+.line1{
+    border-left:1px solid white;
+    height:70px;
+    margin-top: 30px;
+    position: relative;
+    left:110px;
+}
+.tepr{
+    position: relative;
+    left:80px;
+}
+.tepr h1{
+    font-family: "Roboto",sans-serif;
+    font-size: 34px;
+    font-weight:600;
+    margin-top: 10px;
+    
+}
+.tepr h3{
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    font-weight:400;
+    position: relative;
+    bottom:10px;
+    left:20px
+}
+.tepr img{
+    width:15%;
+    height:20%;
+    position: relative;
+    right:0px;
+    top:20px;
+}
+.wihu{
+    margin-top:25px;
+    position:relative;
+    left:120px;
+}
+.wihu h6{
+ font-family: "Roboto",sans-serif;
+ font-weight:400;
+ font-size:12px;
+ line-height: 14px;
+ justify-content: space-between;
+ position: relative;
+ left:70px;
+ bottom:30px;
+
+}
+.wihu img{
+    height:25%;
+    position:relative;
+    left:12px;
+
+}
