@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/Home.css";
+import "../styles/Notes.css";
 
 const Notes = () => {
   const [note, setNote] = useState("");
@@ -18,10 +18,12 @@ const Notes = () => {
       <div className="notes-area">
         <h2>All Notes</h2>
         <textarea
-          placeholder="All Notes"
+          placeholder="This is how I am going to Learn MERN stack in 3 Months"
           value={note}
           onChange={handleNoteChange}
-        ></textarea>
+        >
+          {note}
+        </textarea>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../styles/Home.css";
+import "../styles/News.css";
+
 const News = () => {
   const [newsData, setNewsData] = useState([]);
 
@@ -24,9 +25,9 @@ const News = () => {
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
     return `${day < 10 ? "0" : ""}${day}-${
-      month < 10 ? "0" : ""
-    }${month}-${year}`;
+      month < 10 ? "0" : ""}${month}-${year}`;
   };
+
   const formatTime = (date) => {
     let hours = date.getHours();
     const minutes = date.getMinutes();

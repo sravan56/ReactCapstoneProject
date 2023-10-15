@@ -1,8 +1,8 @@
-import "./App.css";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
 import { Routes, Route } from "react-router-dom";
+import Entertainment from "./pages/Entertainment";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/category" element={<Category />} />
+        <Route path="/entertainment" element={<Entertainment />} />
       </Routes>
     </div>
   );
