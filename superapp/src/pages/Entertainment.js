@@ -11,7 +11,7 @@ const Entertainment = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/");
+    navigate("/home");
   };
 
   useEffect(() => {

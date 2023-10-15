@@ -78,7 +78,7 @@ function Register() {
       localStorage.setItem("user", JSON.stringify(newUser));
       setUser(newUser);
       console.log(newUser);
-      navigate("/");
+      navigate("/category");
     }
   };
 

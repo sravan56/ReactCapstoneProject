@@ -107,7 +107,7 @@ const Category = () => {
       setError("Minimum 3 categories required");
     } else {
       updateLocalStorage([...selectedCategories]);
-      navigate("/");
+      navigate("/home");
     }
   };
 
