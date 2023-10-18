@@ -8,7 +8,8 @@ const News = () => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=6dd44ad13db44f4da2cd0deb4650f202`
+        `
+        https://newsapi.org/v2/everything?q=apple&from=2023-10-17&to=2023-10-17&sortBy=popularity&apiKey=6dd44ad13db44f4da2cd0deb4650f202`
       )
       .then((response) => {
         setNewsData(response.data.articles);
@@ -25,7 +26,8 @@ const News = () => {
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
     return `${day < 10 ? "0" : ""}${day}-${
-      month < 10 ? "0" : ""}${month}-${year}`;
+      month < 10 ? "0" : ""
+    }${month}-${year}`;
   };
 
   const formatTime = (date) => {
